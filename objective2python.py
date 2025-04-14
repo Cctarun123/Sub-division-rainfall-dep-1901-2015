@@ -2,7 +2,6 @@
 mean_rainfall_by_region = df.groupby("SUBDIVISION")["ANNUAL"].mean().sort_values()
 top_5 = mean_rainfall_by_region.tail(5)
 bottom_5 = mean_rainfall_by_region.head(5)
-
 plt.figure(figsize=(12, 6))
 plt.barh(bottom_5.index, bottom_5.values, color='tomato', label='Lowest')
 plt.barh(top_5.index, top_5.values, color='seagreen', label='Highest')
