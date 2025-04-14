@@ -1,5 +1,5 @@
 #4. Detect Rainfall Anomalies
-import numpy as np
+import numpy as np 
 
 mean_annual = df["ANNUAL"].mean()
 std_annual = df["ANNUAL"].std()
